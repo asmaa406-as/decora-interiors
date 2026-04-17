@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | Decora Interiors</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/projects.css">
+</head>
+<body>
+
+    <nav>
+    <a href="index.html" class="logo">Decora Interiors</a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html">FAQ</a></li>   <!-- ← هنا حطينا الـ FAQ -->
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <section class="projects-hero">
+        <h1>Our Projects</h1>
+        <p>Discover our latest interior design works and inspirations</p>
+    </section>
+
+    <div class="search-section">
+        <div class="search-box-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="searchInput" class="search-box" placeholder="Search projects...">
+        </div>
+    </div>
+
+    <section class="projects-grid">
+        <div class="card-grid" id="projectsContainer">
+
+            <!-- 6 مشاريع ظاهرة من الأول -->
+            <div class="project-card" data-search="living room">
+                <img src="../images/lliving.jpg" alt="Living Room">
+                <div class="layer"><h3>Living Room</h3><p>Warm and inviting living space...</p><a href="#">See More</a></div>
+            </div>
+            <div class="project-card" data-search="cafe">
+                <img src="../images/out1.jpg" alt="Cafe">
+                <div class="layer"><h3>Cafe</h3><p>Vibrant cozy cafe...</p><a href="#">See More</a></div>
+            </div>
+            <div class="project-card" data-search="bedroom">
+                <img src="../images/bed.jpg" alt="Bedroom">
+                <div class="layer"><h3>Bedroom</h3><p>Tranquil bedroom...</p><a href="#">See More</a></div>
+            </div>
+            <div class="project-card" data-search="kitchen">
+                <img src="../images/77.jpg" alt="Kitchen">
+                <div class="layer"><h3>Elegant Kitchen</h3><p>Classic kitchen...</p><a href="#">See More</a></div>
+            </div>
+            <div class="project-card" data-search="office">
+                <img src="../images/office.jpg" alt="Office">
+                <div class="layer"><h3>Office</h3><p>Productive workspace...</p><a href="#">See More</a></div>
+            </div>
+            <div class="project-card" data-search="dining">
+                <img src="../images/88.jpg" alt="Dining Room">
+                <div class="layer"><h3>Cozy Dining Room</h3><p>Elegant dining space...</p><a href="#">See More</a></div>
+            </div>
+
+            <!-- باقي المشاريع مخفية من الأول -->
+            <div class="project-card extra" style="display: none;" data-search="bathroom">
+                <img src="../images/bath2.jpg" alt="Bathroom">
+                <div class="layer"><h3>Bathroom</h3><p>Tranquil bathroom...</p><a href="#">See More</a></div>
+            </div>
+            <div class="project-card extra" style="display: none;" data-search="nook">
+                <img src="../images/99.jpg" alt="Entryway Nook">
+                <div class="layer"><h3>Modern Entryway</h3><p>Cozy entryway nook...</p><a href="#">See More</a></div>
+            </div>
+            <div class="project-card extra" style="display: none;" data-search="kitchen2">
+                <img src="../images/kitch.jpg" alt="Modern Kitchen">
+                <div class="layer"><h3>Modern Kitchen</h3><p>Warm kitchen with soft lighting...</p><a href="#">See More</a></div>
+            </div>
+
+        </div>
+
+        <!-- زرار See More -->
+        <div style="text-align:center; margin: 60px 0 100px;">
+            <button id="seeMoreBtn" class="seeMore">See More Projects</button>
+        </div>
+
+        <p id="noResults" class="no-results">No projects found.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Decora Interiors. All Rights Reserved.</p>
+        <p>Creating warm and beautiful homes with passion</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+    <script src="../JS/projects.js"></script>
+</body>
+</html>
